@@ -22,7 +22,9 @@
     "@angular/router": "^6.0.3",
     "core-js": "^2.5.4",
     "rxjs": "^6.0.0",
-    "zone.js": "^0.8.26"
+    "zone.js": "^0.8.26",
+    "jquery" : "3.3.1",
+    "datatables.net": "^1.10.18"
   },
   "devDependencies": {
     "@angular/compiler-cli": "^6.0.3",
@@ -33,6 +35,8 @@
     "@types/jasmine": "~2.8.6",
     "@types/jasminewd2": "~2.0.3",
     "@types/node": "~8.9.4",
+    "@types/jquery": "3.3.4",
+    "@types/datatables.net": "1.10.11",
     "codelyzer": "~4.2.1",
     "jasmine-core": "~2.99.1",
     "jasmine-spec-reporter": "~4.2.1",
