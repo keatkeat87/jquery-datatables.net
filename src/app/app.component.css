@@ -1,4 +1,6 @@
-
+th{
+    text-align: left;
+}
 tr.group,
 tr.group:hover {
     background-color: #ddd !important;

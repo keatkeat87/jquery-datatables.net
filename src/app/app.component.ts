@@ -32,11 +32,11 @@ export class AppComponent implements OnInit, AfterViewInit {
   ngAfterViewInit() {
     $('#keatkeat').html('hello world');
        
-    var groupColumn = 1;
+    var groupColumn = 0;
     $('#table').DataTable({
-        columnDefs: [
-            { "visible": false, "targets": groupColumn }
-        ],
+        // columnDefs: [
+        //     { "visible": false, "targets": groupColumn }
+        // ],
         order: [[ groupColumn, 'asc' ]],
         pageLength : 10,        
         drawCallback: function ( settings ) {
@@ -47,7 +47,7 @@ export class AppComponent implements OnInit, AfterViewInit {
             api.column(groupColumn, {page:'current'} ).data().each( function ( group, i ) {
                 if ( last !== group ) {
                     $(rows).eq( i ).before(
-                        '<tr class="group"><td colspan="5">'+group+'</td></tr>'
+                        '<tr class="group"><td colspan="5">'+group+' data type '+ $(rows).eq(i).data('type') +'</td></tr>'
                     ); 
                     last = group;
                 }
